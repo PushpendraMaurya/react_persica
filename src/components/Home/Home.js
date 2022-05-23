@@ -1,65 +1,51 @@
 import React from "react";
 import "./Home.css";
-import logo from '../../logo.svg';
+// import logo from '../../logo.svg';
 import { Navbar, Container ,Carousel} from "react-bootstrap";
+import bg from '../../images/bg.jpeg';
+import bg1 from '../../images/bg1.jpeg';
+import logo from '../../images/LOGO_P.jpg';
+import Footer from "../Footer";
+
 
 const Home = () => {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <div className="Navbar">
         <Container>
           <Navbar.Brand href="#home">
             <img
               alt=""
               src={logo}
-              width="30"
-              height="30"
+              width="50"
+              height="50"
               className="d-inline-block align-top logo"
             />
           </Navbar.Brand>
         </Container>
-      </Navbar>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={logo}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={logo}
-            alt="Second slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src={logo}
-            alt="Third slide"
-          />
-
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
+      </div>
+     
+      <div className="bg">
+      <div>
+       <img className="bg_pic"src={bg}/>
+      </div>
+      <div>
+      <img className="bg_pic"src={bg1}/>
+      </div>
+      <div className="front_menu">
+      <div className="sub_menu1">
+        Home
+        </div>
+      <div className="sub_menu2">About Us</div>
+      <div className="sub_menu3">Our Product</div>
+      <div className="sub_menu4">All Partners</div>
+      <div className="sub_menu5">Contact Us  </div>
+      </div>
+      <Footer/>
+      </div>
     </>
-  );
+    
+  ); 
 };
 
 export default Home;

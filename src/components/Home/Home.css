@@ -1,4 +1,122 @@
 .container a {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.Navbar {
+}
+.bg_pic {
+  width: 100%;
+  height: 100%;
+}
+.bg {
+  position: relative;
+}
+.front_menu {
+  position: absolute;
+  width: 10%;
+  top: 80px;
+  right: 0px;
+  color: white;
+  font-weight: bold;
+}
+.sub_menu1 {
+  height: 10%;
+  padding: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+.sub_menu2 {
+  height: 10%;
+  padding: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+.sub_menu3 {
+  height: 10%;
+  padding: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+.sub_menu4 {
+  height: 10%;
+  padding: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+.sub_menu5 {
+  height: 10%;
+  padding: 10px 5px 10px 5px;
+  cursor: pointer;
+}
+.sub_menu1::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sub_menu2::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sub_menu3::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sub_menu4::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sub_menu5::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.sub_menu5:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  display: block;
+}
+.sub_menu4:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  display: block;
+}
+.sub_menu3:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  display: block;
+}
+.sub_menu2:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  display: block;
+}
+.sub_menu1:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  display: block;
 }
